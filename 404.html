@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Not Found — Maria Sameen, Ph.D.</title>
+  <meta name="description" content="This page could not be found.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔒</text></svg>">
+  <script>
+    (function(){
+      var t = localStorage.getItem('theme');
+      if (t) document.documentElement.setAttribute('data-theme', t);
+      else if (window.matchMedia('(prefers-color-scheme: dark)').matches)
+        document.documentElement.setAttribute('data-theme', 'dark');
+    })();
+  </script>
+  <style>
+    .error-page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+      gap: 1.5rem;
+    }
+    .error-code {
+      font-family: var(--font-head);
+      font-size: clamp(5rem, 20vw, 10rem);
+      font-weight: 600;
+      color: var(--accent);
+      line-height: 1;
+      opacity: 0.2;
+    }
+    .error-title {
+      font-family: var(--font-head);
+      font-size: 1.75rem;
+      color: var(--text);
+      margin-top: -1rem;
+    }
+    .error-message {
+      color: var(--text-muted);
+      max-width: 40ch;
+    }
+    .error-links {
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="error-page">
+    <p class="error-code" aria-hidden="true">404</p>
+    <h1 class="error-title">Page Not Found</h1>
+    <p class="error-message">
+      The page you were looking for does not exist or has been moved.
+    </p>
+    <div class="error-links">
+      <a href="/" class="btn btn--primary">Go Home</a>
+      <a href="/#publications" class="btn btn--outline">Publications</a>
+      <a href="/#contact" class="btn btn--outline">Contact</a>
+    </div>
+  </div>
+</body>
+</html>
