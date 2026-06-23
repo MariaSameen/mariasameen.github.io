@@ -1,6 +1,6 @@
 # Maria Sameen — Academic Portfolio Website
 
-Personal academic portfolio for Dr. Maria Sameen, hosted at `mariasameen.github.io`.
+Professional portfolio for Dr. Maria Sameen, hosted at `mariasameen.github.io`.
 
 ## Quick Start
 
